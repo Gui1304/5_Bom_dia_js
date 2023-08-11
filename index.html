@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Bom Dia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fundo preto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff; /* Quadrado branco */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #e74c3c; /* Vermelho */
+            font-size: 28px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333; /* Cor do texto */
+        }
+
+        .imagem {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Projeto - Bom dia</h1>
-    <h2><span id="resultado"></span></h2>
+    <div class="container">
+        <h1>Projeto - Bom Dia</h1>
+        <h2><span id="resultado"></span></h2>
+        <img class="imagem" id="imagem" src="" alt="Imagem do período do dia">
+    </div>
 
     <script src="main.js"></script>
 </body>
